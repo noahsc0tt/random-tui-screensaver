@@ -4,7 +4,7 @@ A simple shell script that launches a random terminal screensaver.
 
 ## Requirements
 
-Multiple existing tui screensaver tools are randomised:
+This script randomises multiple existing tui screensaver tools:
 
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
 - [cbonsai](https://github.com/mhzawadi/homebrew-cbonsai)
@@ -22,12 +22,34 @@ Multiple existing tui screensaver tools are randomised:
 ## Installation
 
 This is just a bash script, so:
-1. Make it executable 
-   - `chmod +x random-screensaver.sh`
+1. Make it executable
+    ```sh 
+   chmod +x random-screensaver.sh
+   ```
 2. Put it somewhere on your path
     - `/usr/local/bin` is a standard location
     - The filename should be the command you would like to invoke it by
 
 ## Usage
 
-Run the name of the executable, such as `screensaver`
+Run the name of the executable
+
+
+## Aliases
+
+Here are the aliases I use to launch a specific screensaver:
+```bash
+alias aqua='asciiquarium'
+alias blank='tarts blank'
+alias bonsai='cbonsai -S --life=60 -w 1'
+alias bubbles='ttysvr -b 1a1b26 bubbles'
+alias donut='tarts donut'
+alias dvd='ttysvr -b 1a1b26 logo dvd'
+alias fire='tarts fire'
+alias fireworks='gh screensaver -s fireworks'
+alias jmatrix='cmatrix -b -c' # or glitch if Japanese font is not installed
+alias matrix='cmatrix -b'
+alias pipes='pipes.sh'
+alias rain='tarts matrix'
+alias space='gh screensaver -s starfield -- --speed 10'
+```
