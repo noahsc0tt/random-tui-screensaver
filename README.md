@@ -32,7 +32,7 @@ This is just a bash script, so:
 
 ## Usage
 
-Run the name of the executable, such as `screensaver`
+Run the name of the executable
 
 
 ## Aliases
