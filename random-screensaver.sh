@@ -16,6 +16,4 @@ cmds=(
     'gh screensaver -s starfield -- --speed 10'
 )
 
-rand=${cmds[RANDOM % ${#cmds[@]}]}
-
 eval "${cmds[RANDOM % ${#cmds[@]}]}"
