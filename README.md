@@ -16,8 +16,8 @@ Multiple existing tui screensaver tools are randomised:
  
 ## Installation
 
-This is just a bash script, so make it executable with `chmod +x random-screensaver.sh` and put it somewhere on your path, like `/usr/local/bin`
+This is just a bash script, so make it executable with `chmod +x random-screensaver.sh` and put it somewhere on your path. Name the file the command you would like to invoke it by, such as `/usr/local/bin/screensaver`
 
 ## Usage
 
-Run `random-screensaver.sh`
+Run the name of the executable, such as `screensaver`
