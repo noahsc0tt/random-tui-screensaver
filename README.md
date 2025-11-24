@@ -4,7 +4,7 @@ A simple shell script that launches a random terminal screensaver.
 
 ## Requirements
 
-This script randomises multiple existing tui screensaver tools:
+This script relies on multiple existing tui screensaver tools:
 
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
 - [cbonsai](https://github.com/mhzawadi/homebrew-cbonsai)
@@ -17,8 +17,8 @@ This script randomises multiple existing tui screensaver tools:
 - [tarts](https://github.com/oiwn/tarts)
 - [ttysvr](https://github.com/cxreiff/ttysvr)
     - Unlike the other tools in this list (which all use your terminal background color), ttysvr uses a black background by default
-    - To override this, an explicit background colour can be passed with the -b flag
-    - In `random-screensaver.sh`, replace `1a1b26` (I use [tokyonight](https://github.com/folke/tokyonight.nvim/tree/main/extras)) with the hex of your terminal background colour
+    - To override this, set the `BACKGROUND_COLOR` variable in `random-screensaver.sh`
+
 
 ## Installation
 
@@ -44,17 +44,17 @@ Here are the aliases I use to launch a specific screensaver:
 
 ```bash
 alias aqua='asciiquarium'
-alias blank='tarts blank'
 alias bonsai='cbonsai -S --life=60 -w 1'
-alias bubbles='ttysvr -b 1a1b26 bubbles'
-alias donut='tarts donut'
-alias dvd='ttysvr -b 1a1b26 logo dvd'
-alias fire='tarts fire'
-alias fireworks='gh screensaver -s fireworks'
-alias jmatrix='cmatrix -b -c' # or glitch if Japanese font is not installed
 alias matrix='cmatrix -b'
-alias pipes='pipes.sh'
-alias rain='tarts matrix'
+alias jmatrix='cmatrix -b -c' # or glitch if Japanese font is not installed
+alias fireworks='gh screensaver -s fireworks'
 alias space='gh screensaver -s starfield -- --speed 10'
 alias life='go-life'
+alias pipes='pipes.sh'
+alias blank='tarts blank'
+alias donut='tarts donut'
+alias fire='tarts fire'
+alias rain='tarts matrix'
+alias bubbles="ttysvr -b $BACKGROUND_COLOR bubbles"
+alias dvd="ttysvr -b $BACKGROUND_COLOR logo dvd"
 ```

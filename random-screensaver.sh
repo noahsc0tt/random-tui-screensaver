@@ -1,20 +1,23 @@
 #!/usr/bin/env bash
 
-cmds=(
-    'asciiquarium'
-    'tarts blank'
-    'cbonsai -S --life=60 -w 1'
-    'ttysvr -b 1a1b26 bubbles'
-    'tarts donut'
-    'ttysvr -b 1a1b26 logo dvd'
-    'tarts fire'
-    'gh screensaver -s fireworks'
-    'cmatrix -b -c'
-    'cmatrix -b'
-    'pipes.sh'
-    'tarts matrix'
-    'gh screensaver -s starfield -- --speed 10'
-    'go-life'
+BACKGROUND_COLOR='000000'
+
+SCREENSAVERS=(
+    "asciiquarium"
+    "cbonsai -S --life=60 -w 1"
+    "cmatrix -b"
+    "cmatrix -b -c"
+    "gh screensaver -s fireworks"
+    "gh screensaver -s starfield -- --speed 10"
+    "go-life"
+    "pipes.sh"
+    "tarts blank"
+    "tarts donut"
+    "tarts fire"
+    "tarts matrix"
+    "ttysvr -b $BACKGROUND_COLOR bubbles"
+    "ttysvr -b $BACKGROUND_COLOR logo dvd"
 )
 
-eval "${cmds[RANDOM % ${#cmds[@]}]}"
+index=$(( RANDOM % ${#SCREENSAVERS[@]} ))
+exec bash -c "${SCREENSAVERS[$index]}"
