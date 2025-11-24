@@ -14,6 +14,7 @@ cmds=(
     'pipes.sh'
     'tarts matrix'
     'gh screensaver -s starfield -- --speed 10'
+    'go-life'
 )
 
 eval "${cmds[RANDOM % ${#cmds[@]}]}"
