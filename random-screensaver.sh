@@ -11,6 +11,7 @@ SCREENSAVERS=(
     "gh screensaver -s starfield -- --speed 10"
     "go-life"
     "pipes.sh"
+    "sssnake -m screensaver"
     "tarts blank"
     "tarts donut"
     "tarts fire"

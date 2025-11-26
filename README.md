@@ -14,6 +14,7 @@ This script relies on multiple existing tui screensaver tools:
 - [gh-screensaver](https://github.com/vilmibm/gh-screensaver)
 - [go-life](https://github.com/sachaos/go-life)
 - [pipes.sh](https://github.com/pipeseroni/pipes.sh)
+- [sssnake](https://github.com/AngelJumbo/sssnake)
 - [tarts](https://github.com/oiwn/tarts)
 - [ttysvr](https://github.com/cxreiff/ttysvr)
     - Unlike the other tools in this list (which all use your terminal background color), ttysvr uses a black background by default
