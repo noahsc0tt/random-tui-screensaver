@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ARTTIME_ART='castle3'
-BACKGROUND_COLOR='000000'
+BACKGROUND_COLOR='24283b'
 CITY='London'
 MESSAGE='"The name of the LORD is a strong tower; the righteous run to it and are safe." - Proverbs 18:10'
 
@@ -22,6 +22,9 @@ SCREENSAVERS=(
     "tarts donut"
     "tarts fire"
     "tarts matrix"
+    "termsaver clock"
+    "termsaver randtxt -w '$MESSAGE'"
+    "termsaver starwars"
     "ttysvr -b $BACKGROUND_COLOR bubbles"
     "ttysvr -b $BACKGROUND_COLOR logo dvd"
     "clear && curl wttr.in/$CITY\?F"

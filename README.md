@@ -19,6 +19,7 @@ This script relies on multiple existing tui screensaver tools:
 - [pipes.sh](https://github.com/pipeseroni/pipes.sh)
 - [sssnake](https://github.com/AngelJumbo/sssnake)
 - [tarts](https://github.com/oiwn/tarts)
+- [termsaver](https://github.com/brunobraga/termsaver)
 - [ttysvr](https://github.com/cxreiff/ttysvr)
     - Unlike the other tools in this list (which all use your terminal background color), ttysvr uses a black background by default
     - To override this, set the `BACKGROUND_COLOR` variable in `random-screensaver.sh`
@@ -63,6 +64,9 @@ alias blank='tarts blank'
 alias donut='tarts donut'
 alias fire='tarts fire'
 alias rain='tarts matrix'
+alias clock='termsaver clock'
+alias text="termsaver randtxt -w '$MESSAGE'"
+alias starwars='termsaver starwars'
 alias bubbles="ttysvr -b $BACKGROUND_COLOR bubbles"
 alias dvd="ttysvr -b $BACKGROUND_COLOR logo dvd"
 alias weather="clear && curl wttr.in/$CITY\?F"
