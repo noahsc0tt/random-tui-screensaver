@@ -4,6 +4,7 @@ BACKGROUND_COLOR='000000'
 
 SCREENSAVERS=(
     "asciiquarium"
+    "cava"
     "cbonsai -S --life=60 -w 1"
     "cmatrix -b"
     "cmatrix -b -c"

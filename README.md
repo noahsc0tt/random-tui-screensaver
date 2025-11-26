@@ -7,6 +7,7 @@ A simple shell script that launches a random terminal screensaver.
 This script relies on multiple existing tui screensaver tools:
 
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
+- [cava](https://github.com/karlstav/cava)
 - [cbonsai](https://github.com/mhzawadi/homebrew-cbonsai)
 - [cmatrix](https://github.com/abishekvashok/cmatrix)
     - The screensaver command `cmatrix -b -c` is meant to use Japanese characters
@@ -45,6 +46,7 @@ Here are the aliases I use to launch a specific screensaver:
 
 ```bash
 alias aqua='asciiquarium'
+alias sound='cava'
 alias bonsai='cbonsai -S --life=60 -w 1'
 alias matrix='cmatrix -b'
 alias jmatrix='cmatrix -b -c' # or glitch if Japanese font is not installed
@@ -52,6 +54,7 @@ alias fireworks='gh screensaver -s fireworks'
 alias space='gh screensaver -s starfield -- --speed 10'
 alias life='go-life'
 alias pipes='pipes.sh'
+alias snake='sssnake -m screensaver'
 alias blank='tarts blank'
 alias donut='tarts donut'
 alias fire='tarts fire'
