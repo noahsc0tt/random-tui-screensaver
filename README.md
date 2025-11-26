@@ -65,4 +65,5 @@ alias fire='tarts fire'
 alias rain='tarts matrix'
 alias bubbles="ttysvr -b $BACKGROUND_COLOR bubbles"
 alias dvd="ttysvr -b $BACKGROUND_COLOR logo dvd"
+alias weather="clear && curl wttr.in/$CITY\?F"
 ```

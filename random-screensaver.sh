@@ -2,7 +2,7 @@
 
 ARTTIME_ART='castle3'
 BACKGROUND_COLOR='000000'
-CITY='london'
+CITY='London'
 MESSAGE='"The name of the LORD is a strong tower; the righteous run to it and are safe." - Proverbs 18:10'
 
 SCREENSAVERS=(
@@ -24,6 +24,7 @@ SCREENSAVERS=(
     "tarts matrix"
     "ttysvr -b $BACKGROUND_COLOR bubbles"
     "ttysvr -b $BACKGROUND_COLOR logo dvd"
+    "clear && curl wttr.in/$CITY\?F"
 )
 
 index=$(( RANDOM % ${#SCREENSAVERS[@]} ))
