@@ -14,6 +14,7 @@ SCREENSAVERS=(
     "cmatrix -b"
     "cmatrix -b -c"
     "gh screensaver -s fireworks"
+    "gh screensaver -s marquee -- --message='$MESSAGE'"
     "gh screensaver -s starfield -- --speed 10"
     "go-life"
     "pipes.sh"

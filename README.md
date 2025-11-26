@@ -56,6 +56,7 @@ alias bonsai='cbonsai -S --life=60 -w 1'
 alias matrix='cmatrix -b'
 alias jmatrix='cmatrix -b -c' # or glitch if Japanese font is not installed
 alias fireworks='gh screensaver -s fireworks'
+alias message="gh screensaver -s marquee -- --message=$MESSAGE"
 alias stars='gh screensaver -s starfield -- --speed 10'
 alias life='go-life'
 alias pipes='pipes.sh'
