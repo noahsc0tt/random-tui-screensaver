@@ -3,6 +3,7 @@
 BACKGROUND_COLOR='000000'
 
 SCREENSAVERS=(
+    "astroterm -c -u -m -s 1000 -f 60 --city=london"
     "asciiquarium"
     "cava"
     "cbonsai -S --life=60 -w 1"
