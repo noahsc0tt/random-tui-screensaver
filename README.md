@@ -6,6 +6,7 @@ A simple shell script that launches a random terminal screensaver.
 
 This script relies on multiple existing tui screensaver tools:
 
+- [arttime](https://github.com/poetaman/arttime)
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
 - [astroterm](https://github.com/da-luce/astroterm)
 - [cava](https://github.com/karlstav/cava)
@@ -46,8 +47,9 @@ Run the name of the executable
 Here are the aliases I use to launch a specific screensaver:
 
 ```bash
+alias asciiart="arttime -t '$MESSAGE' -a $ARTTIME_ART --ac 4 --tc 2 --nolearn"
 alias aqua='asciiquarium'
-alias space="astroterm -c -u -m -s 1000 -f 60 --city=london"
+alias space="astroterm -c -u -m -s 1000 -f 60 --city=$CITY"
 alias sound='cava'
 alias bonsai='cbonsai -S --life=60 -w 1'
 alias matrix='cmatrix -b'

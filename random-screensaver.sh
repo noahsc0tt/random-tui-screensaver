@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 
+ARTTIME_ART='castle3'
 BACKGROUND_COLOR='000000'
+CITY='london'
+MESSAGE='"The name of the LORD is a strong tower; the righteous run to it and are safe." - Proverbs 18:10'
 
 SCREENSAVERS=(
-    "astroterm -c -u -m -s 1000 -f 60 --city=london"
+    "arttime -t '$MESSAGE' -a $ARTTIME_ART --ac 4 --tc 2"
+    "astroterm -c -u -m -s 1000 -f 60 --city=$CITY"
     "asciiquarium"
     "cava"
     "cbonsai -S --life=60 -w 1"
