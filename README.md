@@ -1,10 +1,10 @@
-# Random TUI Screensaver
+# Random TTY Screensaver
 
 A simple shell script that launches a random terminal screensaver.
 
 ## Requirements
 
-This script relies on multiple existing tui screensaver tools:
+This script relies on multiple existing screensavers:
 
 - [arttime](https://github.com/poetaman/arttime)
 - [asciiquarium](https://github.com/cmatsuoka/asciiquarium)
@@ -21,31 +21,48 @@ This script relies on multiple existing tui screensaver tools:
 - [tarts](https://github.com/oiwn/tarts)
 - [termsaver](https://github.com/brunobraga/termsaver)
 - [ttysvr](https://github.com/cxreiff/ttysvr)
-    - Unlike the other tools in this list (which all use your terminal background color), ttysvr uses a black background by default
-    - To override this, set the `BACKGROUND_COLOR` variable in `random-screensaver.sh`
 
 
 ## Installation
 
 This is just a bash script, so:
 
-1. Make it executable
+1. Clone this repository
+   ```sh
+   git clone https://github.com/noahsc0tt/random-tui-screensaver
+   cd random-tui-screensaver
+   ```
+
+2. Make the script executable
 
     ```sh
     chmod +x random-screensaver.sh
     ```
 
-2. Put it somewhere on your path
-    - `/usr/local/bin` is a standard location
-    - The filename should be the command you would like to invoke it by
+3. Put it somewhere on your path
+   ```sh
+    cp random-screensaver.sh /usr/local/bin/screensaver
+    ```
+    The filename should be the command you would like to start a screensaver with
 
 ## Usage
 
-Run the name of the executable
+  Run the name of the executable
+  ```sh
+  screensaver
+  ```
 
-## Aliases
+- The `$BACKGROUND_COLOR`, `$CITY`, and `$MESSAGE` variables in `random-screensaver.sh` can be customised to your liking
+  
+- If you don't like any of the screensavers, simply `# comment` them out of `random-screensaver.sh`
 
-Here are the aliases I use to launch a specific screensaver:
+- If you want to add a screensaver, make a PR for it!
+  
+
+
+## Screensavers
+
+Here are all the screensaver commands, along with the aliases I use for each of them:
 
 ```bash
 alias asciiart="arttime -t '$MESSAGE' -a $ARTTIME_ART --ac 4 --tc 2 --nolearn"
